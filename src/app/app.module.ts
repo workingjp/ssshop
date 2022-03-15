@@ -15,6 +15,12 @@ import { SigninComponent } from './Components/Pages/signin/signin.component';
 import { AdmindashboardComponent } from './Components/Pages/admindashboard/admindashboard.component';
 import { UserdashboardComponent } from './Components/Pages/userdashboard/userdashboard.component';
 import { FormsModule } from '@angular/forms';
+import { MobilesComponent } from './Components/Pages/mobiles/mobiles.component';
+import { FashionComponent } from './Components/Pages/fashion/fashion.component';
+import { ElectronicsComponent } from './Components/Pages/electronics/electronics.component';
+import { AppliancesComponent } from './Components/Pages/appliances/appliances.component';
+import { TravelComponent } from './Components/Pages/travel/travel.component';
+import { HouseholdComponent } from './Components/Pages/household/household.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +35,14 @@ import { FormsModule } from '@angular/forms';
     SignupComponent,
     SigninComponent,
     AdmindashboardComponent,
-    UserdashboardComponent
+    UserdashboardComponent,
+    MobilesComponent,
+    FashionComponent,
+    ElectronicsComponent,
+    AppliancesComponent,
+    TravelComponent,
+    HouseholdComponent,
+    
   ],
   imports: [
     BrowserModule,
