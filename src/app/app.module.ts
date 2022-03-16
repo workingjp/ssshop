@@ -22,6 +22,7 @@ import { AppliancesComponent } from './Components/Pages/appliances/appliances.co
 import { TravelComponent } from './Components/Pages/travel/travel.component';
 import { HouseholdComponent } from './Components/Pages/household/household.component';
 import { CartComponent } from './cart/cart.component';
+import { ForgotpassComponent } from './Components/Pages/forgotpass/forgotpass.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,7 @@ import { CartComponent } from './cart/cart.component';
     AppliancesComponent,
     TravelComponent,
     HouseholdComponent,
-    CartComponent,
+    ForgotpassComponent,
     
   ],
   imports: [

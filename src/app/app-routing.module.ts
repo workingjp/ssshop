@@ -5,6 +5,7 @@ import { AdmindashboardComponent } from './Components/Pages/admindashboard/admin
 import { AppliancesComponent } from './Components/Pages/appliances/appliances.component';
 import { ElectronicsComponent } from './Components/Pages/electronics/electronics.component';
 import { FashionComponent } from './Components/Pages/fashion/fashion.component';
+import { ForgotpassComponent } from './Components/Pages/forgotpass/forgotpass.component';
 import { HouseholdComponent } from './Components/Pages/household/household.component';
 import { MobilesComponent } from './Components/Pages/mobiles/mobiles.component';
 import { SigninComponent } from './Components/Pages/signin/signin.component';
@@ -16,6 +17,8 @@ const routes: Routes = [
 {path:'' ,component:HomeComponent},
 {path:'signin' , component:SigninComponent},
 {path:'signup' , component:SignupComponent},
+{path:'forgotpass' , component:ForgotpassComponent},
+
 {path:'household' , component:HouseholdComponent},
 {path:'travel' , component:TravelComponent},
 {path:'mobiles' , component:MobilesComponent},
