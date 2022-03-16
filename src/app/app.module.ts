@@ -21,6 +21,7 @@ import { ElectronicsComponent } from './Components/Pages/electronics/electronics
 import { AppliancesComponent } from './Components/Pages/appliances/appliances.component';
 import { TravelComponent } from './Components/Pages/travel/travel.component';
 import { HouseholdComponent } from './Components/Pages/household/household.component';
+import { ForgotpassComponent } from './Components/Pages/forgotpass/forgotpass.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { HouseholdComponent } from './Components/Pages/household/household.compo
     AppliancesComponent,
     TravelComponent,
     HouseholdComponent,
+    ForgotpassComponent,
     
   ],
   imports: [
