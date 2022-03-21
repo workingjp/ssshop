@@ -21,6 +21,7 @@ import { ElectronicsComponent } from './Components/Pages/electronics/electronics
 import { AppliancesComponent } from './Components/Pages/appliances/appliances.component';
 import { TravelComponent } from './Components/Pages/travel/travel.component';
 import { HouseholdComponent } from './Components/Pages/household/household.component';
+import { CartComponent } from './cart/cart.component';
 import { ForgotpassComponent } from './Components/Pages/forgotpass/forgotpass.component';
 import { AboutComponent } from './Components/Pages/about/about.component';
 import { TeamComponent } from './Components/Pages/team/team.component';
