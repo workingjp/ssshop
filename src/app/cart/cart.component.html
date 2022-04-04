@@ -1,12 +1,52 @@
-<h3>
-    Added Products
-</h3>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
+<body>
+    <ng-container *ngIf="products.length !=0">
+        <div class="w3-container">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Quantity</th>
+                        <th>Gender</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let pro  of products , index as i">
+                        <td>{{i +1}}</td>
+                        <td><img style="width: 120px;" src={{url}}{{pro.documentName}} alt=""></td>
+                        <td>{{pro.documents }}</td>
+                        <td>{{pro.quantity }}</td>
+                        <td>{{pro.gender }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </ng-container>
+    <ng-container *ngIf="products.length ==0">
+        <div style="padding:125px 55px" *ngIf="products.length === 0">
 
+            <h1>Your Cart</h1>
+            <h3>Your cart is currently empty</h3>
 
-
-<ng-container>
-
-
-
-</ng-container>
+            <div class="butt">
+                <button style="  display: inline-block;
+        padding: 8px 20px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-family: eurostile,sans-serif;
+        min-width: 180px;
+        border-radius: 0;
+        background: #f04c23;
+        color: white;" routerLink="/appliances">Continue Shopping<i class="fas fa-arrow-right"
+                        style="margin-left: 4px;"></i></button>
+            </div>
+        </div>
+    </ng-container>
+</body>
+</html>

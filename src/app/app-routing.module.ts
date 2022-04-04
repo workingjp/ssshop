@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CartComponent } from './cart/cart.component';
 import { HomeComponent } from './Components/home/home.component';
 import { AboutComponent } from './Components/Pages/about/about.component';
 import { AdmindashboardComponent } from './Components/Pages/admindashboard/admindashboard.component';
@@ -15,24 +16,25 @@ import { TeamComponent } from './Components/Pages/team/team.component';
 import { TravelComponent } from './Components/Pages/travel/travel.component';
 
 const routes: Routes = [
-  
-{path:'' ,component:HomeComponent},
-{path:'signin' , component:SigninComponent},
-{path:'signup' , component:SignupComponent},
-{path:'about' , component:AboutComponent},
-{path:'team' , component:TeamComponent},
 
-{path:'forgotpass' , component:ForgotpassComponent},
+  { path: '', component: HomeComponent },
+  { path: 'signin', component: SigninComponent },
+  { path: 'signup', component: SignupComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'team', component: TeamComponent },
 
-{path:'household' , component:HouseholdComponent},
-{path:'travel' , component:TravelComponent},
-{path:'mobiles' , component:MobilesComponent},
-{path:'eletronics' , component:ElectronicsComponent},
-{path:'admin' , component:AdmindashboardComponent},
+  { path: 'forgotpass', component: ForgotpassComponent },
 
-{path:'fashion' , component:FashionComponent},
-{path:'appliances' , component:AppliancesComponent},
+  { path: 'household', component: HouseholdComponent },
+  { path: 'travel', component: TravelComponent },
+  { path: 'mobiles', component: MobilesComponent },
+  { path: 'eletronics', component: ElectronicsComponent },
+  { path: 'admin', component: AdmindashboardComponent },
 
+  { path: 'fashion', component: FashionComponent },
+  { path: 'appliances', component: AppliancesComponent },
+
+  { path: 'cart', component: CartComponent }
 
 ];
 

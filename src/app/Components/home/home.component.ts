@@ -7,12 +7,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+
+
+
+  }
 
   ngOnInit(): void {
-  }
-filter(data:any){
-console.log(data);
 
-}
+    let thumbnails = document.getElementsByClassName('thumbnail')
+    let activeIMG = document.getElementsByClassName('active')
+    for (var i = 0; i < thumbnails.length; i++)
+    {
+      thumbnails[i].addEventListener('mouseover' , function(){
+        console.log(activeIMG);
+        if(activeIMG.length>0){
+          activeIMG[0].classList.remove('active')
+        }
+        // this.classList.add('active')
+        // document.getElementById('featured').src = this.src
+      })
+    }
+
+   }
+  filter(data: any) {
+    console.log(data);
+  }
+
 }

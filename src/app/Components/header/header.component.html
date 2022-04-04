@@ -2,14 +2,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-
-
 <body>
     <nav>
-        <div class="menu-icon">
-            <span class="fas fa-bars"></span>
-        </div>
-        <div class="logo">
+            <div class="logo">
             SureTOShop
         </div>
         <form action="#">
@@ -17,10 +12,17 @@
             <button type="submit" class="fa fa-search"></button>
         </form>
         <div class="nav-items">
-            <li><a routerLink="/signin">SignIn</a></li>
-            <li><a routerLink="/">Home</a></li>
-            <li><a routerLink="/">MyCart</a></li>
-
+            
+                <a class="icons"  href="/">
+                <i  style="font-size: 25px;" class="fa fa-tags"></i></a>
+ 
+                <a class="icons" routerLink="/signin">
+                <i   style="font-size: 25px;" class="fa fa-user"></i></a>
+                
+                <a class="icons"  routerLink="/cart">
+                <i style="font-size: 25px;"  class="fa fa-shopping-cart"></i>
+                <div style="font-size: 15px;" class="badge bg-danger">{{count}}</div>
+                </a>
         </div>
-
     </nav>
+</body>
