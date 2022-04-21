@@ -25,6 +25,6 @@ export class CartComponent implements OnInit {
     //   this.products = data                          <<<<<<<<<<<<<<<< appliances.ts
     //   console.log(data);
     // })
-
+ 
   }
 }

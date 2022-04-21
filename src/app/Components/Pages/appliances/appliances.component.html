@@ -2,8 +2,8 @@
     <div class="container py-5 h-200 w-100 ">
         <form >
             <div>
-                <input   #upload type="file" name="DocumentName" (change)="onChange($event)" ngModel>
-                <button  (click)="onUpload()" type="submit">Upload</button>
+                <input #upload type="file" name="DocumentName" (change)="onChange($event)" ngModel>
+                <button (click)="onUpload()" type="submit">Upload</button>
             </div>
 
         </form>
@@ -15,4 +15,4 @@
             </div>
         </div>
     </div>
-</section>  
+</section>       

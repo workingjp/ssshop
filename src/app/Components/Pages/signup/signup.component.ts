@@ -14,8 +14,7 @@ export class SignupComponent implements OnInit {
   }
 
   register(signup: NgForm){
-
-    // if(signup.valid){
+      // if(signup.valid){
       console.log(signup);
     // }
     

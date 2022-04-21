@@ -28,12 +28,10 @@ export class AppliancesComponent implements OnInit {
       });
       console.log(this.productList)
       console.log(data);
-    })
+    })   
     this._cartService.search.subscribe((val: any) => {
       this.searchKey = val;
     })
-
-
 
   }
 
@@ -41,38 +39,7 @@ export class AppliancesComponent implements OnInit {
     this._cartService.addtoCart(item);
   }
 
-  appliances: any[] = [
-    // {
-    //   id: 0,
-    //   img: 'https://rukminim2.flixcart.com/image/416/416/jmthle80-1/iron/p/u/n/philips-gc1903-white-and-green-gc1903-original-imaf9n9j53d2u2k8.jpeg?q=70',
-    //   name: 'PHILIPS GC1903 1440 W Steam Iron'
-    // },
-    // {
-    //   id: 1,
-    //   img: 'https://rukminim2.flixcart.com/image/416/416/jmthle80-1/iron/p/u/n/philips-gc1903-white-and-green-gc1903-original-imaf9n9j53d2u2k8.jpeg?q=70',
-    //   name: 'NOKIA GC1903 1440 W Steam Iron'
-    // },
-    // {
-    //   id: 2,
-    //   img: 'https://rukminim2.flixcart.com/image/416/416/jmthle80-1/iron/p/u/n/philips-gc1903-white-and-green-gc1903-original-imaf9n9j53d2u2k8.jpeg?q=70',
-    //   name: 'SAMSUNG GC1903 1440 W Steam Iron'
-    // },
-    // {
-    //   id: 3,
-    //   img: 'https://rukminim2.flixcart.com/image/416/416/jmthle80-1/iron/p/u/n/philips-gc1903-white-and-green-gc1903-original-imaf9n9j53d2u2k8.jpeg?q=70',
-    //   name: 'ONIDA GC1903 1440 W Steam Iron'
-    // },
-    // {
-    //   id: 4,
-    //   img: 'https://rukminim2.flixcart.com/image/416/416/jmthle80-1/iron/p/u/n/philips-gc1903-white-and-green-gc1903-original-imaf9n9j53d2u2k8.jpeg?q=70',
-    //   name: 'LG GC1903 1440 W Steam Iron'
-    // },
-    // {
-    //   id: 5,
-    //   img: 'https://rukminim2.flixcart.com/image/416/416/jmthle80-1/iron/p/u/n/philips-gc1903-white-and-green-gc1903-original-imaf9n9j53d2u2k8.jpeg?q=70',
-    //   name: 'CHINA GC1903 1440 W Steam Iron'
-    // },
-  ];
+  appliances: any[] = [];
 
 
   onClick(img: any) {
@@ -103,15 +70,6 @@ export class AppliancesComponent implements OnInit {
 
   onChange(event: any) {
     this.file = event.target.files[0]
-
-    // this.image.id = 42;
-    // this.image.documents=null
-    // this.image.quantity=1;
-    // this.image.documentName = event.target.files[0].name;
-    // this.image.total=undefined
-    // console.log(event.target.files[0].name);
-    // console.log(this.image);
-
   }
 
 }
