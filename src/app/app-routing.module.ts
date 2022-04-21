@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CartComponent } from './cart/cart.component';
 import { HomeComponent } from './Components/home/home.component';
@@ -14,6 +14,7 @@ import { SigninComponent } from './Components/Pages/signin/signin.component';
 import { SignupComponent } from './Components/Pages/signup/signup.component';
 import { TeamComponent } from './Components/Pages/team/team.component';
 import { TravelComponent } from './Components/Pages/travel/travel.component';
+import { ProductdisplayComponent } from './Components/Product/productdisplay/productdisplay.component';
 
 const routes: Routes = [
 
@@ -34,7 +35,9 @@ const routes: Routes = [
   { path: 'fashion', component: FashionComponent },
   { path: 'appliances', component: AppliancesComponent },
 
-  { path: 'cart', component: CartComponent }
+  { path: 'cart', component: CartComponent },
+
+  {path : 'productdisplay', component:ProductdisplayComponent}
 
 ];
 
